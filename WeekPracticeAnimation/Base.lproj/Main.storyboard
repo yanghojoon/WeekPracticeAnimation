@@ -25,6 +25,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="에러를 만난 야곰">
                                             <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchUpMeetErrrorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3DB-kQ-tdn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnd-bu-TrQ">
                                         <rect key="frame" x="0.0" y="70" width="354" height="31"/>
@@ -41,21 +44,24 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX6-YN-nag">
                                         <rect key="frame" x="0.0" y="210" width="354" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                        <buttonConfiguration key="configuration" style="filled" title="되돌리기">
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchUpResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lf-8h-IQf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="knS-O8-yyb">
-                                <rect key="frame" x="36" y="258" width="342" height="204"/>
+                                <rect key="frame" x="36" y="74" width="342" height="388"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pwC-wt-LXC" firstAttribute="top" secondItem="knS-O8-yyb" secondAttribute="bottom" constant="32" id="CwO-NF-KKC"/>
-                            <constraint firstItem="knS-O8-yyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="HkD-EB-v9G"/>
+                            <constraint firstItem="knS-O8-yyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="HkD-EB-v9G"/>
                             <constraint firstItem="knS-O8-yyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hvp-zf-5xt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="knS-O8-yyb" secondAttribute="bottom" constant="400" id="K8I-xb-Ql1"/>
                             <constraint firstItem="knS-O8-yyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="ToN-ah-SNP"/>
@@ -64,6 +70,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="knS-O8-yyb" secondAttribute="trailing" constant="36" id="wPW-jd-zLA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="yagom" destination="knS-O8-yyb" id="YWe-Gy-xDB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
