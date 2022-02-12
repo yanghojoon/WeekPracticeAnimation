@@ -32,9 +32,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnd-bu-TrQ">
                                         <rect key="frame" x="0.0" y="70" width="354" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                        <buttonConfiguration key="configuration" style="filled" title="새 맥북을 구매한 야곰">
                                             <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchUpBuyMac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8TT-kf-0lD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayy-fX-cr8">
                                         <rect key="frame" x="0.0" y="140" width="354" height="31"/>
